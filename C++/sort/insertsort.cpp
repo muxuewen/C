@@ -2,6 +2,7 @@
 #include <list>
 using namespace std;
 
+// 简单选择排序
 void SimpleChoose(int arr[], int len)
 {
 	if (len <= 1)
@@ -23,6 +24,7 @@ void SimpleChoose(int arr[], int len)
 	}
 }
 
+// 插入排序
 void insert(int arr[], int len)
 {
 	int temp = 0;
@@ -40,6 +42,7 @@ void insert(int arr[], int len)
 
 }
 
+// 希尔排序
 void shell(int arr[], int len)
 {
 	int temp = 0;
@@ -61,7 +64,7 @@ void shell(int arr[], int len)
 	}
 }
 
-
+// 快速排序
 void quick(int arr[], int low, int len)
 {
 	if (low >= len || len <= 0)
@@ -87,6 +90,7 @@ void quick(int arr[], int low, int len)
 	quick(arr, first + 1, len);
 }
 
+// 冒泡排序
 void bubble(int arr[], int len)
 {
 	int temp = 0;
